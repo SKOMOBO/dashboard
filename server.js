@@ -26,7 +26,7 @@ app.use(express.static("build"))
 app.use(cors())
 
 app.get("/who-am-i", (req, resp)=>{
-    resp.set('Access-Control', 'Allow-Origin')
+    // resp.set('Access-Control', 'Allow-Origin')
     resp.json({first_name: "Ryan", last_name:"Weyers"})
 })
 
