@@ -9,6 +9,7 @@ import './App.css';
 import {LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from "recharts"
 class SimpleLineChart extends Component{
 
+  // possible css framework https://github.com/creativetimofficial/material-dashboard
   render(){
     let data = [
       {name: 'Page A', uv: 4000, pv: 2400, amt: 2410},
