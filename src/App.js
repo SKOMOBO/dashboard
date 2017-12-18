@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import ReactMapboxGl from "react-mapbox-gl";
+// import ReactMapboxGl from "react-mapbox-gl";
 import './App.css';
 
 // import ReactDOM from 'react-dom';
@@ -65,12 +65,12 @@ class App extends Component {
   // }
 
   render() {
-    const Map = ReactMapboxGl({
-      accessToken : 'pk.eyJ1IjoibWFzc2V5LWRlc2lnbmVyIiwiYSI6ImNqYWRyd2lpbzBtcm4ycXBsaWI0OHRxbzcifQ.tJb630r3fR883YGRpCYYJg',
-      touchZoomRotate : false,
-      doubleClickZoom : false,
-      dragPan : false
-    });
+    // const Map = ReactMapboxGl({
+    //   accessToken : 'pk.eyJ1IjoibWFzc2V5LWRlc2lnbmVyIiwiYSI6ImNqYWRyd2lpbzBtcm4ycXBsaWI0OHRxbzcifQ.tJb630r3fR883YGRpCYYJg',
+    //   touchZoomRotate : false,
+    //   doubleClickZoom : false,
+    //   dragPan : false
+    // });
     return ( 
 
       <div className="App">
@@ -85,7 +85,7 @@ class App extends Component {
           HELLO {this.state.name}!!!
         </p>
 
-        <div style={{paddingLeft:"35vw"}}>
+       {/* <div style={{paddingLeft:"35vw"}}>
         <Map
         // style="mapbox://styles/mapbox/streets-v9"
         style="mapbox://styles/mapbox/dark-v9"
@@ -94,7 +94,7 @@ class App extends Component {
         containerStyle={{
           height: "60vh",
           width: "30vw"
-        }}>
+        }}>*/}
         
          {/* <Layer
             type="symbol"
@@ -102,9 +102,9 @@ class App extends Component {
             layout={{ "icon-image": "marker-15" }}>
             <Feature coordinates={[40.9006, 174.8860]}/>
             {/*<Feature coordinates={[-0.481747846041145, 51.3233379650232]/>
-          </Layer>*/}
+          </Layer>
       </Map>
-      </div>
+      </div>*/}
       <SimpleLineChart></SimpleLineChart>
         {/*<div id="map" style={{width:"2000px", height:"500px"}}></div>*/}
         {/* this is a example plotly chart that only gets shown once its finished loading its very slow*/}
